@@ -1,0 +1,10 @@
+# Repo: raigo276/angular-test-fe
+# File: azure-pipelines.yml
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: raigo276/BuildTemplates
+
+jobs:
+- template: fe-ng-pipelines.yaml@templates  # Template reference
