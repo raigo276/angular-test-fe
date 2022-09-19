@@ -5,6 +5,7 @@ resources:
     - repository: templates
       type: github
       name: raigo276/BuildTemplates
+      endpoint: raigo276
 
 jobs:
-- template: fe-ng-pipelines.yaml@templates  # Template reference
+- template: fe-ng-pipelines.yaml # Template reference
