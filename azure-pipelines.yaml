@@ -2,10 +2,10 @@
 # File: azure-pipelines.yml
 resources:
   repositories:
-    - repository: templates
+    - repository: BuildTemplates
       type: github
-      name: raigo276/BuildTemplates
+      name: BuildTemplates
       endpoint: github.com_raigo276
 
 jobs:
-- template: fe-ng-pipelines.yaml # Template reference
+- template: fe-ng-pipelines.yaml@templates # Template reference
